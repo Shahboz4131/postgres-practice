@@ -10,9 +10,7 @@ create table users (
 
 create or replace  function users_trigger_pass() returns trigger language plpgsql as
 $$
-
 	begin 
-
 			select * from users where new.username = username and new.firstname = firstname and new.lastname = lastname;
 
 			if not found then
@@ -62,9 +60,6 @@ group by od.product_id, p.name
 order by od.product_id asc
 limit 1
 ;
-
-
-join type_register as tr on tr.type_register_id = 6 or tr.type_register_id = 8
 
 
 select 
