@@ -1,14 +1,12 @@
-insert into components(name) values ('Go''sht'), ('Sabzi'), ('Guruch'), ('Piyoz'), ('Kartoshka'), ('Karam');
-insert into components(name) values ('Yog'''), ('Pishloq');
-insert into components(name) values ('Tuz'), ('Mosh');
-
-
-
 
 create table components (
 	component_id serial not null primary key,
 	name varchar(32) not null
 );
+
+insert into components(name) values ('Go''sht'), ('Sabzi'), ('Guruch'), ('Piyoz'), ('Kartoshka'), ('Karam');
+insert into components(name) values ('Yog'''), ('Pishloq');
+insert into components(name) values ('Tuz'), ('Mosh');
 
 comment on table components is 'Xom ashyolar';
 
